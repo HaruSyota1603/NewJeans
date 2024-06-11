@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+
+/*font-family: "Yellowtail", cursive;
+font-family: "Roboto", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Nunito Sans", sans-serif;
+font-family: "Asap", sans-serif;*/
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #1c1c1c;
+}
+
+h1 {
+    font-family: "Asap", sans-serif;
+    color: #191970;
+    text-align: center;
+    padding-top: 4%;
+    text-shadow: #000;
+
+}
+
+
+
+h2 {
+
+    font-family: "Asap", sans-serif;
+    color: #494bb3;
+    text-align: center;
+    padding-top: 4%;
+
+
+
+}
+
+p {
+
+    color: #fff;
+    /* */
+    padding: 2%;
+    text-indent: 1.8rem;
+}
+
+/* HEADER */
+
+header {
+
+    height: 100vh;
+}
+
+/* NAV */
+
+header nav {
+
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+
+}
+
+/* Logo */
+
+#logo {
+
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+header nav #logo img {
+
+    width: 100%;
+
+}
+
+nav ul {
+
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li a {
+
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px #000;
+
+}
+
+nav ul li a:hover {
+
+    color: rgb(177, 172, 207);
+    border-bottom: 1px solid;
+    text-shadow: 1px 1px #bfbec2;
+    transition: all 1s;
+
+}
+
+.hamburguer,
+.close {
+
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* TELAS MENORES (celular) MENU */
+
+@media (max-width:768px) {
+
+    .hamburguer {
+        display: block;
+
+    }
+
+    ul {
+
+        background-color: #191970;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 40vw !important;
+        flex-direction: column;
+        justify-content: space-around !important;
+
+    }
+
+}
+
+/* BANNER */
+
+.banner {
+
+    background: linear-gradient(#00000080, #0000006e), url("https://payload.cargocollective.com/1/24/776887/14388449/c.gif") center no-repeat;
+
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25rem;
+    align-items: center;
+
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #000000;
+    font-size: 1.2r em;
+
+}
+
+.botao {
+    background-color: #191970;
+    color: #fff;
+    padding: .8rem 1.8rem;
+    font-size: .8rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+
+}
+
+/* SOBRE */
+
+#sobre {
+    background: linear-gradient(#0000005e, #000), url("https://pbs.twimg.com/media/FZEGgwUXgAIv2Qk.jpg:large") center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.botao_destaque {
+    background-color: #1e4896;
+    box-shadow: 2px 2px #564592;
+
+
+}
+
+#sobre p {
+    color: #fff;
+    background-color: #0000008f;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SERVIÇOS */
+
+#servicos {
+    background-color: #000000;
+    background: linear-gradient(#0000005e, #000), url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/df56fc152986119.63281b8da10ba.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+#conteudos_servicos {
+    background-color: #0000005e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 2rem;
+
+}
+
+#conteudos_servicos div {
+    background-color: rgb(69, 61, 184);
+    max-width: 350px;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+#conteudos_servicos img {
+    width: 60px;
+}
+
+/* FOTOS */
+
+#fotos {
+    background: linear-gradient(#0000005e, #000), url("https://images.lifestyleasia.com/wp-content/uploads/sites/2/2023/06/19174638/Screenshot-2023-06-19-at-17.42.45-1-1600x669.png") center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#fotos div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#fotos img {
+    max-width: 350px;
+    height: 200px;
+    margin: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(#0000005e, #000), url("https://images.lifestyleasia.com/wp-content/uploads/sites/2/2023/06/19174638/Screenshot-2023-06-19-at-17.42.45-1-1600x669.png") center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contatos_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px 2px color(blue)
+}
