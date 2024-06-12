@@ -177,6 +177,10 @@ nav ul li a:hover {
     text-shadow: 2px 2px #000000;
     font-size: 1.2r em;
 
+.banner p {
+    text-align: center;
+}
+
 }
 
 .botao {
